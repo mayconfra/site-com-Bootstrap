@@ -1,0 +1,120 @@
+<!--Site responsivo desenvolvido com recursos do framework Bootstrap.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf_8">
+        <!--Título da guia do browser.-->
+        <title>Office School</title>
+        <!--CSS do Bootstrap.-->
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+        <!--CSS próprio.-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!--Barra de navegação do Bootstrap.-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning espacamento">
+            <!--Logomarca e título da empresa fictícia.-->
+            <a class="navbar-brand text-center" href="#">
+                <img src="logo-os.png" width="45" heigth="45" class="rounded-circle" alt="Logomarca da Office School">
+                <h1 class="text-white">Office School</h1>
+            </a>
+            <!--Links para áreas na mesma página web.-->
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link text-light" href="#quemsomos">Quem Somos</a>
+                    <a class="nav-item nav-link text-light" href="#parceria">Parceria</a>
+                    <a class="nav-item nav-link text-light" href="#cursos">Cursos</a>
+                    <a class="nav-item nav-link text-light" href="#contato">Contato</a>
+                </div>
+            </div>
+        </nav>
+        <section class="container-fluid">
+            <!--Primeiro destino dos links, e conteúdo.-->
+            <article id="quemsomos" class="container text-center espacamento-dois">
+                <h2 class="text-warning margem espacamento-tres">QUEM SOMOS</h2>
+                <img src="logo-os.png" width="240" alt="Logomarca da Office School" class="espacamento-tres">
+                <p class="tamanho-fonte margem"> 
+                    Somos uma escola de ensino presencial.
+                    Nossa missão é ensinar e fazemos isto com qualidade.
+                    Ensinamos os programas mais utilizados do office da Microsoft.
+                    Venha aprender com a gente! Acesse a área de contato!
+                </p>
+            </article>
+            <!--Segundo destino dos links, e conteúdo.-->
+            <article id="parceria" class="text-center espacamento-dois">
+                <h2 class="text-warning margem espacamento-tres">PARCERIA</h2>
+                <img src="logomicrosoft.png" width="425" alt="Logomarca da Microsoft" class="espacamento-tres">
+                <h3 class="text-secondary margem">Somos os principais parceiros da empresa Microsoft.</h3>
+            </article>
+            <!--Terceiro destino dos links, e conteúdo.-->
+            <article id="cursos" class="container text-center espacamento-dois">
+                <h2 class="text-warning margem espacamento-tres">CURSOS</h2>
+                <!--Área horizontal para colunas.-->
+                <div class="row espacamento-tres">
+                    <!--Colunas de imagens.-->
+                    <div class="col-lg">
+                        <img src="logoaccess.png" width="75" alt= "Logotipo do Access">
+                    </div>
+                    <div class="col-lg">
+                        <img src="logoexcel.png" width="75" alt="Logotipo do Excel">
+                    </div>
+                    <div class="col-lg">
+                        <img src="logopowerpoint.png" width="75" alt="Logotipo do Power Point">
+                    </div>
+                    <div class="col-lg">
+                        <img src="logoword.png" width="75" alt="Logotipo do Word">
+                    </div>
+                </div>
+                <h3 class="text-secondary margem">Access, Excel, Power Point e Word.</h3>
+            </article>
+            <!--Quarto destino dos links, e conteúdo.-->
+            <article id="contato" class="espacamento-dois">
+                <h2 class="text-center text-warning margem espacamento-tres">CONTATO</h2>
+                <p class="text-center tamanho-fonte text-warning">
+                    Entre em contato ou venha até nós para mais informações:
+                </p>
+                <!--Formulário para envio de perguntas.-->
+                <!--Valor do atributo action: endereço URL. O valor do atributo method pode ser get ou post.-->
+                <form action="" method="post">
+                    <div class="form-group">
+                        <div class="col-md-6 offset-md-3">
+                            <label for="feedbackDeValidacao1">Nome completo</label>
+                            <input type="text" name="nomeComp" class="form-control" id="feedbackDeValidacao1" placeholder="Seu nome e sobrenome" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6 offset-md-3">
+                            <label for="feedbackDeValidacao2">E-mail</label>
+                            <input type="email" name="e-mail" class="form-control" id="feedbackDeValidacao2" placeholder="Seu principal e-mail" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6 offset-md-3">
+                            <label for="feedbackDeValidacao3">Assunto</label>
+                            <input type="text" name="assunto" class="form-control" id="feedbackDeValidacao3" placeholder="Assunto" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6 offset-md-3">
+                            <label for="feedbackDeValidacao4">Pergunta</label>
+                            <textarea name="msm" class="form-control" id="feedbackDeValidacao4" rows="3" placeholder="O que você gostaria de saber?" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6 offset-md-3">
+                            <button class="btn btn-primary" type="submit">Enviar</button>    
+                        </div>                        
+                    </div>
+                </form>
+                <p class="text-center">
+                    TEL: (12)1234-5678
+                </p>
+                <p class="text-center">
+                    ENDEREÇO: Rua Fulano de Tal, 123, Jardim Beltrano, São José dos Campos - SP.
+                </p>
+            </article>
+        </section>
+        <!--Rodapé com o crédito do desenvolvimento do site.-->
+        <footer class="text-center bg-dark text-white">Desenvolvido por Maycon França</footer>
+    </body>    
+</html>

@@ -1,0 +1,34 @@
+/*Formatação da página com CSS próprio, através das suas classes e elementos.*/
+
+.espacamento {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+.espacamento-dois {
+    padding-top: 85px;
+}
+
+.margem {
+    margin: 0;
+}
+
+.espacamento-tres {
+    padding-bottom: 40px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.tamanho-fonte {
+    font-size: 18px;
+}
